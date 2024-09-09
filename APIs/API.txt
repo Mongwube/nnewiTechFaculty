@@ -1,0 +1,11 @@
+Rules of APIs (Application Programming Interface)
+1. HTTP Method
+2. End Point and URLs
+3. Data Format
+4. Authemtication and Authorization
+5. Status Clean
+6. Headers
+7. Rate Limitting
+8. Error Handling
+
+APIs is a set of roles and protocal that allows how different software program communicate with each other.

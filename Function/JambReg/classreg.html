@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="classreg.css">
+</head>
+<body>
+    <form id="form">
+    <h2>Nnewi Tech Screening</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="enter name here ...." >
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="enter age here ...." >
+    <br>
+    <label for="school">School Name:</label>
+    <input type="text" id="school" name="school" placeholder="enter school name here ...." >
+    <br>
+    <label for="jamb ">Jamb reg:</label>
+    <input type="text number" id="jamb" name="jamb" placeholder="enter jamb reg here ...." >
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="enter email here ...." >
+    <br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+<script>
+    document.getElementById('form').addEventListener('submit', function(event){
+    event.preventDefault();
+    const student ={
+        name: document.getElementById('name').value,
+        age: document.getElementById('age').value,
+        school: document.getElementById('school').value,
+        jamb: document.getElementById('jamb').value,
+        email: document.getElementById('email').value,
+    }
+
+    console.log('registering student', student);
+
+
+    
+    const students = JSON.parse(localStorage.getItem('students')) || [];
+    students.push(student);
+    localStorage.setItem('students', JSON.stringify(students));
+    console.log('student in localStorage:', students);
+    alert('Registered Successfully');
+    // window.location.href = 'loginreg.html';
+});
+</script>
+</html>

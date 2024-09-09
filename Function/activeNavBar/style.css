@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    height: 4rem;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.8);
+    /* position: fixed; */
+    padding-top: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 3rem;
+}
+nav li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    font-size: large;
+    /* background-color: red; */
+    text-decoration: underline;
+    color: #5fee5a;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 5rem;
+}
+
+@media (max-width:750px){
+    
+}

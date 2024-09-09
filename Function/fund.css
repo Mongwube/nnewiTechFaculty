@@ -1,0 +1,28 @@
+nav{
+    height: 8rem;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.8);
+    /* position: fixed; */
+    padding-top: 2rem;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 3rem;
+}
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a.active{
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 5rem;
+}
+
+@media (max-width:750px){
+    
+}

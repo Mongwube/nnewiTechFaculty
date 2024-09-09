@@ -1,0 +1,14 @@
+.moving{
+    color: red;
+}
+
+.slide{
+    height: 30rem;
+    width: 12rem;
+    background-color: blue;
+    margin-left: -12rem;
+}
+
+.boxMove{
+    margin-left: 14rem;
+}

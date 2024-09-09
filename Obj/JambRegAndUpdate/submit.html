@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <form id="SubmitForm">
+        <h2>Register For Js class</h2>
+        <label for="name">Jamb Reg:</label>
+        <input type="text" id="jamb_reg" name="jamb_reg" placeholder="enter here ..." required>
+        <br>
+        <label for="user"> User:</label>
+        <input type="text" id="user" name="user" required>
+        <br>
+        <label for="nin_number"> Nin_number:</label>
+        <input type="number" id="nin_number" name="nin_number"  required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  required>
+        <br>
+      
+        <button type="submit">Submit</button>
+    </form>
+</body>
+<script>
+    document.getElementById('SubmitForm').addEventListener('submit', function(event){
+        event.preventDefault();
+        const studentUserInfo = {
+            jamb_reg : document.getElementById('jamb_reg').value,
+            user: document.getElementById('nin_number').value,
+            nin_number: document.getElementById('user').value,
+            email: document.getElementById('email').value,
+            
+        }
+
+        const storeData = JSON.parse(localStorage.getItem('userInfo')) || []
+        storeData.push(studentUserInfo);
+        localStorage.setItem('userInfo', JSON.stringify(storeData));
+        console.log()
+        alert('Registered Successfully');
+
+
+  
+    });
+</script>
+</html>

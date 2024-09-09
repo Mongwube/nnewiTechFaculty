@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+	
+		
+	}
+    body{
+        background-color: #85212F;
+    }
+    .contain{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+    .fade{
+        width: 100%;
+        height: 100%;
+    }
+    .box{
+        width: 100%;
+        height: 100%;
+    }
+
+    .backImg{
+        background-image: url('/APIs/Img/beach.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 47rem;
+    }
+
+    .Img1{
+        background-image: url('/APIs/Img/beach2.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 47rem;
+    }
+
+    .vail{
+        background: rgb(0,0,0,0.7);
+        position: fixed;
+        z-index: 23;
+        width: 100%;
+        height: 100%;
+    }
+    .vail section{
+        display: inline-grid;
+    }
+    .text-slide{
+        background-color: transparent;
+        height: 17rem;
+        backdrop-filter: blur(1px);
+        width: 22rem;
+    }
+
+    .reg-form{
+        background-color: transparent;
+        height: 40rem;
+        backdrop-filter: blur(4px);
+        width: 24rem;
+    }
+
+    .text{
+        padding-left: 3rem;
+        padding-left: 2rem;
+    }
+
+    .text h2{
+        font-size: 30px;
+        color: #fff;
+        padding-top: 3rem;
+        /* padding-left: 1rem; */
+    }
+
+    .text article{
+        font-size: 19px;
+        color: antiquewhite;
+    }
+
+       @media (min-width: 412px) {}
+
+        @media (min-width: 640px) {}
+
+        @media (min-width: 768px) {}
+
+        @media (min-width: 1024px) {}
+    
+        @media (min-width: 1280px) {
+            .vail section{
+                display: inline-flex;
+            }
+
+            .text-slide{
+                background-color: transparent;
+                height: 39rem;
+                backdrop-filter: blur(1px);
+                width: 45rem;
+            }
+
+            .reg-form{
+                background-color: transparent;
+                height: 39rem;
+                backdrop-filter: blur(4px);
+                width: 36rem;
+            }
+
+            .text{
+                padding-left: 20rem;
+                padding-left: 4rem;
+            }
+
+            .text h2{
+                font-size: 30px;
+                color: #fff;
+                padding-top: 20rem;
+                padding-left: 4rem;
+            }
+
+            .text article{
+                font-size: 19px;
+                color: antiquewhite;
+            }
+
+        }
