@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
 * {
@@ -63,7 +64,7 @@
 
     .reg-form{
         background-color: transparent;
-        height: 40rem;
+        height: 20rem;
         backdrop-filter: blur(4px);
         width: 24rem;
     }
@@ -80,53 +81,180 @@
         /* padding-left: 1rem; */
     }
 
+
     .text article{
         font-size: 19px;
         color: antiquewhite;
+        margin-top: 1rem;
     }
 
-       @media (min-width: 412px) {}
+    .social-media-icons{
+        margin-left: 3rem;
+        color: bisque;
+        margin-bottom: rem;
+        margin-left: 0.9rem;
+    }
 
-        @media (min-width: 640px) {}
+    .social-media-icons i {
+        margin-left: 1rem;
+    }
 
-        @media (min-width: 768px) {}
+    .reg-form{
+        padding-left: 1rem;
+        padding-top: 1rem;
+        overflow: scroll;
+    }
 
-        @media (min-width: 1024px) {}
+    .reg-form h2{
+        font-size: 18px;
+        color: aliceblue;
+        font-weight: lighter;
+    }
+
+    .name input{
+        width: 20rem;
+        height: 2rem;
+        background: transparent;
+        border-bottom: solid 2px #ccc;
+        margin-top: 2rem;
+    }
     
-        @media (min-width: 1280px) {
-            .vail section{
-                display: inline-flex;
-            }
+    .sect{
+        display: inline-flex;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
 
-            .text-slide{
-                background-color: transparent;
-                height: 39rem;
-                backdrop-filter: blur(1px);
-                width: 45rem;
-            }
+    .sect button{
+        width: 7rem;
+        height: 3rem;
+        background-color: #E71737;
+        color: aliceblue;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 
-            .reg-form{
-                background-color: transparent;
-                height: 39rem;
-                backdrop-filter: blur(4px);
-                width: 36rem;
-            }
+    .sect p a{
+        color: aliceblue;
+        font-size: 14px;
+        position: relative;
+        top: .5rem;
+    }
 
-            .text{
-                padding-left: 20rem;
-                padding-left: 4rem;
-            }
+    #togglePassword{
+        width: 4rem;
+        height: 1.5rem;
+        background-color: #E71737;
+        color: aliceblue;
+        position: relative;
+        top: 0.4rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
 
-            .text h2{
-                font-size: 30px;
-                color: #fff;
-                padding-top: 20rem;
-                padding-left: 4rem;
-            }
+    @media (min-width: 412px) {}
 
-            .text article{
-                font-size: 19px;
-                color: antiquewhite;
-            }
+    @media (min-width: 640px) {}
 
+    @media (min-width: 768px) {}
+
+    @media (min-width: 1024px) {}
+    
+    @media (min-width: 1280px) {
+        .vail section{
+            display: inline-flex;
         }
+
+        .text-slide{
+            background-color: transparent;
+            height: 39rem;
+            backdrop-filter: blur(1px);
+            width: 45rem;
+        }
+
+        .reg-form{
+            background-color: transparent;
+            height: 39rem;
+            backdrop-filter: blur(4px);
+            width: 36rem;
+            overflow: hidden;
+        }
+
+        .text{
+            padding-left: 20rem;
+            padding-left: 4rem;
+        }
+
+        .text h2{
+            font-size: 30px;
+            color: #fff;
+            padding-top: 20rem;
+            padding-left: 4rem;
+        }
+
+        .text article{
+            font-size: 19px;
+            color: antiquewhite;
+            margin-top: 1rem;
+        }
+
+        .social-media-icons{
+            margin-left: 3rem;
+            color: bisque;
+            margin-bottom: rem;
+        }
+
+        .social-media-icons i {
+            margin-left: 1rem;
+        }
+
+        .reg-form{
+            padding-left: 3rem;
+            padding-top: 10rem;
+        }
+
+        .reg-form h2{
+            font-size: 18px;
+            color: aliceblue;
+            font-weight: lighter;
+        }
+
+        .name input{
+            width: 25rem;
+            height: 2rem;
+            background: transparent;
+            border-bottom: solid 2px #ccc;
+            margin-top: 2rem;
+        }
+        
+        .sect{
+            display: inline-flex;
+            padding-top: 2rem;
+            gap: 2rem;
+        }
+
+        .sect button{
+            width: 7rem;
+            height: 3rem;
+            background-color: #E71737;
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .sect p a{
+            color: aliceblue;
+            font-size: 14px;
+            position: relative;
+            top: .5rem;
+        }
+
+        #togglePassword{
+            width: 4rem;
+            height: 1.5rem;
+            background-color: #E71737;
+            color: aliceblue;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    }
