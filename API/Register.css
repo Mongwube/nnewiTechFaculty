@@ -372,7 +372,107 @@
         }
 
         @media (min-width: 768px) {
+            .vail section{
+                display: inline-grid;
+            }
+        
+            .text-slide{
+                background-color: transparent;
+                height: 17rem;
+                width: 22rem;
+                backdrop-filter: blur(1px);
+            }
+        
+            .reg-form{
+                background-color: transparent;
+                height: 28rem;
+                width: 30rem;
+                backdrop-filter: blur(2px);
+        
+            }
+        
+            .text{
+                padding-top: 1.5rem;
+                padding-left: 3rem;
+            }
+        
+            .text h2{
+                font-size: 30px;
+                color: aliceblue;
+            }
+        
+            .text article{
+                font-size: 16px;
+                color: antiquewhite;
+                margin-top: 1rem;
             
+            }
+        
+            .social-media-icons{
+                margin-left: 3.5rem;
+                margin-top: 1rem;
+                color: azure;
+                margin-left: 1.9rem;
+            }
+        
+        
+            .social-media-icons i{
+                margin-left: 1rem;
+            }
+        
+            .reg-form{
+                padding-left: 3rem;
+                padding-top: 1rem;
+                overflow: scroll;
+            }
+        
+            .reg-form h2{
+                font-size: 25px;
+                color: aliceblue;
+                font-weight: lighter;
+            }
+        
+            .name input{
+                width: 27rem;
+                height: 1.3rem;
+                background-color: transparent;
+                border-bottom: solid 1px #ccc;
+                /* margin-top: 2rem; */
+            }
+        
+        
+            .sect{
+                display: inline-flex;
+                /* padding-top: 2rem; */
+                gap: 2rem;
+            }
+        
+            .sect button{
+                width: 7rem;
+                height: 2.5rem;
+                background-color: #E71737;
+                color: #ccc;
+                cursor: pointer;
+                border-radius: 2px;
+            }
+        
+            .sect p a{
+                color:aliceblue;
+                font-size: 14px;
+                position: relative;
+                top: 0.2rem;
+            }
+        
+            #toggle-password{
+                width:4rem;
+                height: 2rem;
+                background-color: #E71737;
+                color: #ccc;
+                position: relative;
+                top: 0.4rem;
+                cursor: pointer;
+                border-radius: 2px;
+            }
         }
 
         @media (min-width: 1024px) {}
